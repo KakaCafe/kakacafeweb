@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thar - The Taste of Rajasthan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span>🏺 THAR</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#catering">Catering</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="btn btn-order-online">ORDER ONLINE</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>WELCOME TO</h1>
+            <h2>Thar - The Taste of Rajasthan</h2>
+            <p>Experience the royal flavors of authentic Rajasthani cuisine in the heart of Bangalore.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('menu').scrollIntoView()">VIEW
+                    MENU</button>
+                <button class="btn btn-secondary">ORDER ONLINE</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>A Legacy of Flavors</h2>
+                <p>Thar - The Taste of Rajasthan brings the rich heritage of Rajasthani cuisine to your plate. Our
+                    journey began with a simple passion: to serve authentic, home-cooked flavors that tell the story of
+                    the desert land.</p>
+                <p>From the comforting Dal Baati Churma to every dish, we prepare with traditional spices and age-old
+                    recipes passed down through generations. Experience royal hospitality and a culinary voyage that
+                    will transport you straight to the palaces of Rajasthan.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-utensils"></i>
+                        <h3>✦Authentic Recipes✦</h3>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-crown"></i>
+                        <h3>✦Royal Ambiance✦</h3>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-leaf"></i>
+                        <h3>✦Fresh Ingredients✦</h3>
+                    </div>
+                </div>
+                <button class="btn btn-primary">DISCOVER MORE</button>
+            </div>
+            <div class="about-image">
+                <img src="https://www.tharthetasteofrajasthan.com/assets/about-img-DAFBaOYn.png" alt="Rajasthani Thali"
+                    class="about-img">
+            </div>
+        </div>
+        <div class="establishment-badge">
+            <span>Est. 2019</span>
+            <h3>DISCOVER OUR FLAVORS</h3>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="menu-container">
+            <h2>Authentic Menu</h2>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-tab="must-have">Must Have</button>
+                <button class="tab-btn" data-tab="starters">Starters</button>
+                <button class="tab-btn" data-tab="main">Main Course</button>
+                <button class="tab-btn" data-tab="thali">Royal Thalis</button>
+                <button class="tab-btn" data-tab="breads">Breads & Rice</button>
+            </div>
+
+            <div class="menu-items">
+                <div class="menu-item active" data-tab="must-have">
+                    <div class="item-card">
+                        <div class="item-header">
+                            <h3>Dal Baati Churma</h3>
+                            <span class="price">₹199</span>
+                        </div>
+                        <p class="item-description">The iconic Rajasthani classic with baked baati, slow-cooked dal, and
+                            sweet churma.</p>
+                        <button class="btn btn-small">ADD TO CART</button>
+                    </div>
+
+                    <div class="item-card">
+                        <div class="item-header">
+                            <h3>Thar Special Thali</h3>
+                            <span class="price">₹229</span>
+                        </div>
+                        <p class="item-description">A complete Rajasthani meal with curated regional flavours, perfect
+                            for first-time diners.</p>
+                        <button class="btn btn-small">ADD TO CART</button>
+                    </div>
+
+                    <div class="item-card bestseller">
+                        <div class="bestseller-badge">BESTSELLER</div>
+                        <div class="item-header">
+                            <h3>Thar Double Special Thali</h3>
+                            <span class="price">₹369</span>
+                        </div>
+                        <p class="item-description">A royal platter featuring Dal Baati Churma, signature sabzis, rotis,
+                            rice, and accompaniments.</p>
+                        <button class="btn btn-small">ADD TO CART</button>
+                    </div>
+
+                    <div class="item-card">
+                        <div class="item-header">
+                            <h3>Ker Sangri</h3>
+                            <span class="price">₹249</span>
+                        </div>
+                        <p class="item-description">A rare desert delicacy made with dried berries and beans, cooked the
+                            traditional Marwari way.</p>
+                        <button class="btn btn-small">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-tab="starters">
+                    <div class="item-card">
+                        <div class="item-header">
+                            <h3>Pyaaz Kachori</h3>
+                            <span class="price">₹149</span>
+                        </div>
+                        <p class="item-description">Crispy pastry filled with spiced onions, a perfect starter.</p>
+                        <button class="btn btn-small">ADD TO CART</button>
+                    </div>
+                    <div class="item-card">
+                        <div class="item-header">
+                            <h3>Mirchi Bajji</h3>
+                            <span class="price">₹139</span>
+                        </div>
+                        <p class="item-description">Spicy green chili fritters with gram flour coating.</p>
+                        <button class="btn btn-small">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-tab="main">
+                    <div class="item-card">
+                        <div class="item-header">
+                            <h3>Laal Maas</h3>
+                            <span class="price">₹329</span>
+                        </div>
+                        <p class="item-description">Tender lamb cooked in traditional red spice gravy.</p>
+                        <button class="btn btn-small">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-tab="thali">
+                    <div class="item-card">
+                        <div class="item-header">
+                            <h3>Royal Rajasthani Thali</h3>
+                            <span class="price">₹399</span>
+                        </div>
+                        <p class="item-description">Complete feast with all regional specialties.</p>
+                        <button class="btn btn-small">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-tab="breads">
+                    <div class="item-card">
+                        <div class="item-header">
+                            <h3>Bajra Rotli</h3>
+                            <span class="price">₹49</span>
+                        </div>
+                        <p class="item-description">Millet flour flatbread, traditional Rajasthani bread.</p>
+                        <button class="btn btn-small">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-actions">
+                <a href="#" class="btn btn-primary">VIEW ON SWIGGY</a>
+                <a href="#" class="btn btn-secondary">VIEW OUR MENU</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="gallery-container">
+            <h2>Visual Feast</h2>
+            <h3>Our Gallery</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://www.tharthetasteofrajasthan.com/assets/ambience-DO92BveT.jpg"
+                        alt="Colourful Ambience" class="gallery-img">
+                    <p>Colourful Ambience</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.tharthetasteofrajasthan.com/assets/chowki-BaHzoCzu.jpg"
+                        alt="Traditional Down Sitting Chowki" class="gallery-img">
+                    <p>Traditional Down Sitting Chowki</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.tharthetasteofrajasthan.com/assets/lanterns-BzjDsvws.jpg"
+                        alt="Festive Rajasthani Decor" class="gallery-img">
+                    <p>Festive Rajasthani Decor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catering Section -->
+    <section id="catering" class="catering">
+        <div class="catering-container">
+            <h2>Royal Events</h2>
+            <h3>Catering Services</h3>
+            <div class="catering-content">
+                <div class="catering-image">
+                    <img src="https://www.tharthetasteofrajasthan.com/assets/catering_banner-CcBhN_Yz.jpg"
+                        alt="Thar Catering Services" class="catering-img">
+                </div>
+                <div class="catering-info">
+                    <p>Make your special events memorable with our authentic Rajasthani catering services. From intimate
+                        gatherings to grand celebrations, we bring the taste of Rajasthan to your doorstep.</p>
+                    <button class="btn btn-primary" onclick="window.location.href='tel:+919380075541'">Contact Us for
+                        Events</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Locations Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2>Visit Us</h2>
+            <h3>Our Locations</h3>
+            <p>Experience the royal taste of Rajasthan at our exclusive outlets.</p>
+
+            <div class="locations-grid">
+                <div class="location-card">
+                    <h4>Koramangala</h4>
+                    <p>10, 2nd Floor, 17th Main Rd, Opp. 315 Work Avenue, 5th Block, Koramangala, Bengaluru</p>
+                    <p class="phone"><i class="fas fa-phone"></i> <a href="tel:+918949936747">+91 89499 36747</a></p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7976649747!2d77.62444!3d12.93530!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15a5c5c5c5c5%3A0x5c5c5c5c5c5c5c5c!2sThar%20-%20The%20Taste%20of%20Rajasthan!5e0!3m2!1sen!2sin!4v1234567890"
+                        width="100%" height="250" style="border:0; border-radius: 8px; margin-top: 1rem;"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <button class="btn btn-small"
+                        onclick="window.open('https://www.google.com/maps/search/?api=1&query=Thar+The+Taste+of+Rajasthan+Koramangala')">Get
+                        Directions</button>
+                </div>
+
+                <div class="location-card">
+                    <h4>Brookfield</h4>
+                    <p>321, 1st Main Rd, AECS Layout, Brookefield, Bengaluru, Karnataka 560037</p>
+                    <p class="phone"><i class="fas fa-phone"></i> <a href="tel:+916362433174">+91 63624 33174</a></p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7976649747!2d77.68644!3d12.95640!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1b0b0b0b0b0b%3A0xb0b0b0b0b0b0b0b!2sThar%20Brookfield!5e0!3m2!1sen!2sin!4v1234567890"
+                        width="100%" height="250" style="border:0; border-radius: 8px; margin-top: 1rem;"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <button class="btn btn-small"
+                        onclick="window.open('https://www.google.com/maps/search/?api=1&query=Thar+The+Taste+of+Rajasthan+Brookefield')">Get
+                        Directions</button>
+                </div>
+            </div>
+
+            <div class="opening-hours">
+                <h4>Opening Hours</h4>
+                <p>Mon - Sun: 11:30 AM - 11:30 PM</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Thar - The Taste of Rajasthan</h4>
+                <p>Serving since 2019</p>
+            </div>
+
+            <div class="footer-section">
+                <h5>Opening Hours</h5>
+                <p>11:30 AM - 11:30 PM</p>
+                <p>Daily</p>
+            </div>
+
+            <div class="footer-section">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Order Online</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h5>Koramangala</h5>
+                <p>Jyothi Nivas, 5th Block, Koramangala, Bengaluru</p>
+                <p><a href="tel:+918949936747">+91 89499 36747</a></p>
+                <div class="delivery-links">
+                    <a href="#" target="_blank">Order on Swiggy</a>
+                    <a href="#" target="_blank">Order on Zomato</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h5>Brookfield</h5>
+                <p>ITPL Main Road, Brookfield, Bengaluru</p>
+                <p><a href="tel:+916362433174">+91 63624 33174</a></p>
+                <div class="delivery-links">
+                    <a href="#" target="_blank">Order on Swiggy</a>
+                    <a href="#" target="_blank">Order on Zomato</a>
+                </div>
+            </div>
+
+            <div class="footer-section social">
+                <h5>Follow Us</h5>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Thar Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

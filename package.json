@@ -1,0 +1,10 @@
+{
+  "name": "kaka-cafe-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix kaka-cafe-web",
+    "build": "npm run build --prefix kaka-cafe-web",
+    "preview": "npm run preview --prefix kaka-cafe-web"
+  }
+}
